@@ -19,16 +19,27 @@
 
 .our-team {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     & .item {
             background: #ffffff;
             border: 1px solid #eeeeee;
             border-radius: 0px 0px 4px 4px;
+            width: 100%;
+            
+            @media screen and (min-width: 768px) {
+               flex-basis: 50%; 
+            }
+
+            @media screen and (min-width: 1200px) {
+                flex-basis: 25%;
+            }
         }
 
-        & .item+.item {
-            margin-left: 30px;
-        }
+        // & .item+.item {
+        //     margin-left: 30px;
+        // }
 }
 
 
