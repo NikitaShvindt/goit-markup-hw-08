@@ -1,31 +1,44 @@
 .icons-clients {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-list {
-    display: flex;
+  display: flex;
 
-    & .item+.item {
-      margin-left: 30px;
-        }
+  //   & .item + .item {
+  //     margin-left: 30px;
+  //   }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    padding: 0px;
+  }
 }
 
 .clients-soc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
-    fill: #afb1b8;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 210px;
+  height: 92px;
+  fill: #afb1b8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
-     fill: #2196f3;
-     border-color: #2196f3;
-     }
+  &:hover {
+    fill: #2196f3;
+    border-color: #2196f3;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 50%;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }

@@ -153,6 +153,22 @@ span.logo {
 }
 
 /* menu-link */
+@media screen and (max-width: 767px) {
+  .navigation {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .navigation__link {
   position: relative;
   display: block;
@@ -214,6 +230,11 @@ span.logo {
 .main-nav {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .main-nav {
+    height: 60px;
+  }
 }
 
 /* auth-nav */
@@ -286,6 +307,21 @@ span.logo {
 }
 .auth-nav .link {
   color: #757575;
+}
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .navigation__site {
@@ -487,6 +523,11 @@ span.logo {
   border-radius: 0px 0px 4px 4px;
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .our-team .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .our-team .item {
     flex-basis: 50%;
@@ -534,8 +575,11 @@ span.logo {
 .clients-list {
   display: flex;
 }
-.clients-list .item + .item {
-  margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .clients-list {
+    flex-wrap: wrap;
+    padding: 0px;
+  }
 }
 
 .clients-soc {
@@ -544,7 +588,7 @@ span.logo {
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   fill: #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -552,6 +596,16 @@ span.logo {
 .clients-soc:hover {
   fill: #2196f3;
   border-color: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .clients-soc {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clients-soc {
+    margin-bottom: 30px;
+  }
 }
 
 .footer {
@@ -566,11 +620,23 @@ span.logo {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 767px) {
+  .footer-mail {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer-tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 767px) {
+  .footer-tel {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 a.logo-white {
@@ -579,6 +645,19 @@ a.logo-white {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  a.logo-white {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-info > .list {
+    margin-bottom: 60px;
+  }
 }
 
 span.logo-color {
@@ -600,6 +679,12 @@ span.logo-color {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .footer-address {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .footer-soc-title {
   margin-top: 12px;
@@ -610,6 +695,12 @@ span.logo-color {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .footer-soc-title {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-soc {
@@ -634,25 +725,28 @@ span.logo-color {
   background-color: #2196f3;
 }
 
-.footer-position {
-  display: flex;
-}
-
 .social-list {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .social-list {
+    display: flex;
+    justify-content: center;
+  }
+}
 
-.footer-soc-list {
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .footer-soc-list {
+    margin-bottom: 60px;
+  }
 }
 
 .follow-field {
   margin-top: 10px;
-  margin-left: 93px;
 }
 
 .follow-mail {
-  width: 358px;
+  width: 100%;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
@@ -660,6 +754,11 @@ span.logo-color {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+}
+@media screen and (max-width: 767px) {
+  .follow-mail {
+    margin-bottom: 20px;
+  }
 }
 
 .follow-title {
@@ -670,6 +769,19 @@ span.logo-color {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .follow-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .follow-button {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .follow-btn {
