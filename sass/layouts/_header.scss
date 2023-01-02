@@ -4,7 +4,7 @@ a.logo {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-right: 93px;
+  margin-right: 87px;
 }
 
 span.logo {
@@ -133,6 +133,14 @@ span.logo {
   &:hover {
     fill: #2196f3;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 
 .icon-mail {
@@ -151,6 +159,10 @@ span.logo {
 
 .social-tel {
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+  }
 }
 
 .icon-tel {
@@ -212,6 +224,11 @@ span.logo {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: end;
   }
 }
 

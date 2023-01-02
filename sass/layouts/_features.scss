@@ -1,6 +1,10 @@
 .features {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .icon {
@@ -16,6 +20,16 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     flex-basis: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.features > .item + .item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
   }
 }
 
@@ -60,6 +74,10 @@
 
   @media screen and (min-width: 768px) {
     width: 358px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
 

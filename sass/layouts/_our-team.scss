@@ -35,17 +35,19 @@
     }
 
     @media screen and (min-width: 768px) {
-      flex-basis: 50%;
+      width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
-      flex-basis: 25%;
+      width: 270px;
     }
   }
+}
 
-  // & .item+.item {
-  //     margin-left: 30px;
-  // }
+.our-team > .item + .item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .bckg {

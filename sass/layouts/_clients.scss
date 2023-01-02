@@ -15,6 +15,16 @@
     flex-wrap: wrap;
     padding: 0px;
   }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients-soc {
@@ -36,9 +46,20 @@
 
   @media screen and (max-width: 767px) {
     flex-basis: 50%;
+    margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: 30%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.clients-list > .item + .item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 20px;
   }
 }
