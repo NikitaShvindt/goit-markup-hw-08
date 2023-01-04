@@ -51,9 +51,19 @@ button {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_mob.jpg);
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_tab.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  }
 }
 
 body {
@@ -747,7 +757,14 @@ a.logo-white {
 }
 @media screen and (min-width: 768px) {
   a.logo-white {
-    margin-left: 115px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  a.logo-white {
+    margin-left: 0px;
   }
 }
 
@@ -768,6 +785,13 @@ span.logo-color {
 .logo-color:focus,
 .logo-color:hover {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .footer-address {
@@ -857,6 +881,13 @@ span.logo-color {
     margin-bottom: 102px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-soc-list {
+    margin-left: 70px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+}
 
 .follow-field {
   margin-top: 10px;
@@ -865,6 +896,12 @@ span.logo-color {
   .follow-field {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .follow-field {
+    margin-left: 135px;
+    margin-right: 0px;
   }
 }
 
@@ -917,6 +954,11 @@ span.logo-color {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .follow-title {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .follow-button {
@@ -928,6 +970,11 @@ span.logo-color {
   .follow-button {
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .follow-button {
+    display: inline-block;
   }
 }
 
