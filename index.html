@@ -58,6 +58,37 @@
             </a>
           </li>
         </ul>
+        <div class="modal-mobile">
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu_mob"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="19" height="19">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu list">
+            <li><a href="" class="link">Студія</a></li>
+            <li><a href="" class="link">Портфоліо</a></li>
+            <li><a href="" class="link">Контакти</a></li>
+            <a href="">+38 096 111 11 11</a>
+            <a href="">info@devstudio.com</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+            <a href="">LinkedIn</a>
+          </ul>
+        </div>
       </header>
     </div>
     <main>
@@ -159,7 +190,11 @@
             <ul class="our-team list">
               <li class="item">
                 <img
-                  src="./images/team-igor (1).jpg"
+                  srcset="
+                    ./images/team-igor.jpg    1x,
+                    ./images/team-igor-2x.jpg 2x
+                  "
+                  src="./images/team-igor.jpg"
                   alt="our team"
                   width="100%"
                 />
@@ -190,7 +225,11 @@
               </li>
               <li class="item">
                 <img
-                  src="./images/team-olga (1).jpg"
+                  srcset="
+                    ./images/team-olga.jpg    1x,
+                    ./images/team-olga-2x.jpg 2x
+                  "
+                  src="./images/team-olga.jpg"
                   alt="our team"
                   width="100%"
                 />
@@ -222,7 +261,11 @@
               </li>
               <li class="item">
                 <img
-                  src="./images/team-mikola (1).jpg"
+                  srcset="
+                    ./images/team-mikola.jpg    1x,
+                    ./images/team-mikola-2x.jpg 2x
+                  "
+                  src="./images/team-mikola.jpg"
                   alt="our team"
                   width="100%"
                 />
@@ -254,7 +297,11 @@
               </li>
               <li class="item">
                 <img
-                  src="./images/team-mihailo (1).jpg"
+                  srcset="
+                    ./images/team-mihailo.jpg    1x,
+                    ./images/team-mihailo-2x.jpg 2x
+                  "
+                  src="./images/team-mihailo.jpg"
                   alt="our team"
                   width="100%"
                 />
@@ -480,5 +527,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

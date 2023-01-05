@@ -46,18 +46,20 @@ button {
   overflow: hidden;
 }
 
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_mob.jpg);
-  background-position: center;
-  background-size: cover;
+@media screen and (min-width: 480px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_mob.jpg);
+    background-position: center;
+    background-size: cover;
+  }
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_tab.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -91,6 +93,34 @@ body {
   .container {
     width: 1200px;
   }
+}
+
+.modal-mobile {
+  margin-left: auto;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #ffffff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
 }
 
 .section {
@@ -141,6 +171,24 @@ span.logo {
 /* header */
 .header {
   border-bottom: 1px solid #eeeeee;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  background-color: #2196f3;
 }
 
 /* menu-link */
@@ -722,6 +770,11 @@ span.logo {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-mail {
+    display: block;
+  }
+}
 .footer-tel {
   font-size: 14px;
   line-height: 1.71;
@@ -764,6 +817,7 @@ a.logo-white {
 }
 @media screen and (min-width: 1200px) {
   a.logo-white {
+    display: block;
     margin-left: 0px;
   }
 }
@@ -1332,6 +1386,11 @@ textarea {
 .products-overlay:hover .products-text {
   transform: translateY(0);
   opacity: 1;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
 }
 
 /* logo */

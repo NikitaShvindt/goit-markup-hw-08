@@ -26,6 +26,29 @@ span.logo {
   border-bottom: 1px solid #eeeeee;
 }
 
+// mobile-menu
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}
+
 /* menu-link */
 
 .navigation {
