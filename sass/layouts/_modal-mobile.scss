@@ -2,3 +2,72 @@
   display: flex;
   flex-direction: column;
 }
+
+.mobile-menu .link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.mobile-menu > li:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu .current {
+  color: #2196f3;
+}
+
+.current-mob {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.current-mobile {
+  margin-bottom: 32px;
+}
+
+.current-soc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.current-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.modal-soc {
+  padding: 0px;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.modal-soc-link {
+  padding: 0px;
+  display: flex;
+}
+
+.modal-soc-link > .list:not(:last-child) {
+  margin-right: 20px;
+}
