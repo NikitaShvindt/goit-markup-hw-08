@@ -46,7 +46,7 @@ button {
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .overlay {
     max-width: 1600px;
     height: 600px;
@@ -636,14 +636,24 @@ span.logo {
   border-radius: 0px 0px 4px 4px;
   width: 100%;
 }
+@media screen and (max-width: 1199px) {
+  .our-team .item {
+    width: 354px;
+    margin-left: 7px;
+    margin-right: 8px;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .our-team .item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .our-team .item {
-    width: 354px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -698,6 +708,7 @@ span.logo {
   .clients-list {
     flex-wrap: wrap;
     padding: 0px;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -730,13 +741,24 @@ span.logo {
 }
 @media screen and (max-width: 767px) {
   .clients-soc {
-    flex-basis: 50%;
     margin-bottom: 30px;
+    margin-left: 8px;
+    margin-right: 7px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .clients-soc {
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 7px;
+    flex-basis: 45%;
   }
 }
 @media screen and (min-width: 768px) {
   .clients-soc {
     flex-basis: 30%;
+    margin-left: 15px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1091,6 +1113,11 @@ span.logo-color {
   padding-bottom: 40px;
   padding-right: 40px;
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 100%;
+  }
+}
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -1278,6 +1305,11 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .modal-btn {
+    margin-left: 30px;
+  }
 }
 
 .policy {
